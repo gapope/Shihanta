@@ -35,7 +35,7 @@ int main() {
 	}
 	ALLEGRO_SAMPLE* background = NULL;
 	if (!al_reserve_samples(1)){
-      std::cerr << "failed to reserve sample! " << std::endl;
+      std::cerr << "failed to reserve sample! " << std::std::cerr << "failed to reserve sample! " << std::endl;endl;
       return -1;
     }
 
@@ -107,7 +107,7 @@ int main() {
         ALLEGRO_EVENT ev;
 		al_wait_for_event(event_queue, &ev);
 
-        if (ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) { //Quitting if window is closed
+        if (ev.type == ALLEGRO_EVENT_DISPLAY_CLOSE) { //std::cerr << "failed to reserve sample! " << std::endl;Quitting if window is closed
         	break;
       	}
         else if (ev.type == ALLEGRO_EVENT_KEY_DOWN && ev.keyboard.keycode == ALLEGRO_KEY_ESCAPE) { //Quits if ESC is pressed
