@@ -2,15 +2,16 @@
 1518284797 source:d:\greg\shihanta\src\entity.cpp
 	"Entity.h"
 
-1518284396 d:\greg\shihanta\include\entity.h
+1518297824 d:\greg\shihanta\include\entity.h
 	<allegro5/allegro.h>
 
-1518285636 source:d:\greg\shihanta\main.cpp
+1518305177 source:d:\greg\shihanta\main.cpp
 	<iostream>
 	<vector>
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
 	"Entity.h"
 
 1518278668 d:\allegro\include\allegro5\allegro.h
