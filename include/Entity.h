@@ -9,14 +9,12 @@ class Entity
         short type;
         short health;
         int x, y;
-        ALLEGRO_BITMAP* sprite;
+        ALLEGRO_BITMAP* spriteA;
         ALLEGRO_BITMAP* spriteB;
 
     public :
         Entity() {health = 1; x = 0; y = 0;}
-        Entity(short sx, int sy) {type = 0; health = 1; x = sx; y = sy; sprite = nullptr;}
-        Entity(short t, int sx, int sy) {type = t; health = 1; x = sx; y = sy; sprite = nullptr;}
-        Entity(short t, short h, int sx, int sy, ALLEGRO_BITMAP* image) {type = t; health = h; x = sx; y = sy; sprite = image;}
+        Entity(short t, short h, int sx, int sy, ALLEGRO_BITMAP* imageA, ALLEGRO_BITMAP* imageB) {type = t; health = h; x = sx; y = sy; spriteA = imageA; spriteB = imageB;}
 
         short getType() {return type;}
         short getHealth() {return health;}
@@ -27,8 +25,8 @@ class Entity
         void setY(int ny) {y = ny;}
         int getX() {return x;}
         int getY() {return y;}
-        void setSprite(ALLEGRO_BITMAP* image) {sprite = image;}
-        ALLEGRO_BITMAP* getSprite() {return sprite;}
+        void setSprite(ALLEGRO_BITMAP* image, short i) {(i == 1 ? spriteA : spriteB) = image;}
+        ALLEGRO_BITMAP* getSprite(short i) {return (i == 1) ? spriteA : spriteB;}
         virtual ~Entity();
 };
 

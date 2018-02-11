@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1518284797 source:d:\greg\shihanta\src\entity.cpp
+1518372370 source:d:\greg\shihanta\src\entity.cpp
 	"Entity.h"
 
-1518367007 d:\greg\shihanta\include\entity.h
+1518384181 d:\greg\shihanta\include\entity.h
 	<allegro5/allegro.h>
 
-1518369143 source:d:\greg\shihanta\main.cpp
+1518385161 source:d:\greg\shihanta\main.cpp
 	<iostream>
 	<vector>
 	<stdlib.h>
@@ -14,6 +14,8 @@
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_audio.h>
 	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
 	"Entity.h"
 
 1518278668 d:\allegro\include\allegro5\allegro.h
