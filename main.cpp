@@ -189,7 +189,7 @@ int main() {
         //Starting timer process
         al_start_timer(timer);
 
-        /* Loop the sample until the display closes. */
+        // Loop the sample until the display closes.
         al_play_sample(backgroundMusic, 0.5, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,NULL);
     }
 
@@ -307,7 +307,7 @@ int main() {
 
                 //Removing off-screen enemies
                 if (enemies[i].x < 0) {
-                    enemies.erase(enemies.begin() + i);
+                    enemies.erase(enemies.begin() + i);enemies.push_back(fireProjectile(fishman, SCREEN_W + 10, rand() % (SCREEN_H - 60) + 15, timeCount)); //Fishman
                 }
 
                 if ((enemies[i].type % 10 == 2) && timeCount % 180 == 0) {
@@ -433,6 +433,8 @@ int main() {
 
     al_show_mouse_cursor(display);
     al_ungrab_mouse();
+    al_stop_samples();
+
 
     if (dead) {
         al_draw_bitmap(gameOver, 0, 0, 0);
