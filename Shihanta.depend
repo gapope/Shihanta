@@ -2,12 +2,14 @@
 1518284797 source:d:\greg\shihanta\src\entity.cpp
 	"Entity.h"
 
-1518297824 d:\greg\shihanta\include\entity.h
+1518367007 d:\greg\shihanta\include\entity.h
 	<allegro5/allegro.h>
 
-1518305177 source:d:\greg\shihanta\main.cpp
+1518369143 source:d:\greg\shihanta\main.cpp
 	<iostream>
 	<vector>
+	<stdlib.h>
+	<time.h>
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_audio.h>

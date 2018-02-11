@@ -10,6 +10,7 @@ class Entity
         short health;
         int x, y;
         ALLEGRO_BITMAP* sprite;
+        ALLEGRO_BITMAP* spriteB;
 
     public :
         Entity() {health = 1; x = 0; y = 0;}
